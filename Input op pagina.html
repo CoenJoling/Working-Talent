@@ -1,0 +1,31 @@
+<HTML>
+
+<head>
+    <b>HTML opdracht</b>
+</head>
+
+<style>
+
+</style>
+
+<script>
+    function Weergeven(){
+           
+    var resultaat = document.getElementById("uitkomst"); //zorgt ervoor dat resultaat onderaan de pagina geprint word
+    resultaat.innerHTML = document.getElementById("input").value; //resultaat een waarde geven
+    }
+   
+</script>
+
+<body>
+    <p>
+        Iets printen wat is ingevoerd
+    </p>
+    <p>
+        <input id=input type="text" placeholder="Vul iets in om te weergeven">
+        <input id=button type="button" value="Klik hier" onclick="Weergeven()">
+    </p> 
+    <p id=uitkomst></p>
+        
+    </body>
+</HTML>

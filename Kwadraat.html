@@ -12,10 +12,8 @@
     function uitrekenen(){
     var waardeinput=document.getElementById("input").value; //zorgt ervoor dat waardeinput een waarde uit de inputbox krijgt
         
-    var resultaat =parseInt(waardeinput)*parseInt(waardeinput);
-
-    var uitkomst = document.getElementById("uitkomst"); //zorgt ervoor dat resultaat onderaan de pagina geprint word
-    uitkomst.innerHTML = resultaat;
+    var resultaat = document.getElementById("uitkomst"); //zorgt ervoor dat resultaat onderaan de pagina geprint word
+    resultaat.innerHTML = waardeinput*waardeinput //resultaat een waarde geven
     }
    
 </script>
