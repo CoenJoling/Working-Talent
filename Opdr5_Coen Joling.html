@@ -1,0 +1,69 @@
+ <html>
+     <head>
+         <style>
+             .blok{
+                 background-color: lightseagreen;
+                 display: inline-block;
+                 width: 80px;
+                 height: 80px;
+                 text-align: center;
+                }
+         </style>
+
+        <script> 
+            var a = 0;
+            var b = 0;
+            var c = 0;
+            var d = 0;
+
+
+            function appear(A){     
+               a = a+1 
+               var klik = document.getElementById("History");
+               klik.innerHTML += "Knop " + A + " is" + a + "geklikt <br>"
+               if(a>1){
+                   alert("je hebt al "+a+ "keer op A geklikt")
+               }
+            }
+            
+            function appear(B){
+                b=b+1
+                var klik = document.getElementById("History");
+                klik.innerHTML += "Knop " + B + " is geklikt <br>"
+                if(b>1){
+                   alert("je hebt al "+b+ "keer op B geklikt")
+               }
+            }
+
+            function appear(C){
+                c=c+1
+                var klik = document.getElementById("History");
+               klik.innerHTML += "Knop " + C + " is geklikt <br>"
+               if(c>1){
+                   alert("je hebt al "+c+ "keer op D geklikt")
+               }
+            }
+
+            function appear(D){
+                d=d+1
+                var klik = document.getElementById("History");
+              klik.innerHTML += "Knop " + D + " is geklikt <br>"
+              if(d>1){
+                   alert("je hebt al "+d+ "keer op D geklikt")
+               }
+            }
+
+            
+        </script>
+
+</head>
+<body>
+<div id=A class=blok onclick="appear(id)"> A </div>
+<div id=B class=blok onclick="appear(id)"> B </div>
+<div id=C class=blok onclick="appear(id)"> C </div>
+<div id=D class=blok onclick="appear(id)"> D </div>
+<div id="History">
+
+
+</body>
+ </html>

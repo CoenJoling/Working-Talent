@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<script>
+var a = 0;
+var b = 0;
+var c = 0;
+var d = 0;
+
+
+function A(){
+    a++;
+    var textnode = document.createTextNode(" U heeft op knop A gedrukt");
+    var enter = document.createElement("br");
+    document.getElementById("div").appendChild(textnode);
+    document.getElementById("div").appendChild(enter);
+    if(a>1){
+        alert('U heeft al '+a+' keer op A geklikt')
+    }
+}
+function B(){
+    b++
+    var textnode = document.createTextNode("U heeft op knop B gedrukt");
+    var enter = document.createElement("br")
+    document.getElementById("div").appendChild(textnode);
+    document.getElementById("div").appendChild(enter);
+    if(b>1){
+        alert('U heeft al '+b+' keer op B geklikt')
+    }
+}
+function C(){
+    c++
+    var textnode = document.createTextNode("U heeft op knop C gedrukt");
+    var enter = document.createElement("br")
+    document.getElementById("div").appendChild(textnode);
+    document.getElementById("div").appendChild(enter);
+    if(c>1){
+        alert('U heeft al '+c+' keer op C geklikt')
+    }
+}
+function D(){
+    d++
+    var textnode = document.createTextNode("U heeft op knop D gedrukt");
+    var enter = document.createElement("br")
+    document.getElementById("div").appendChild(textnode);
+    document.getElementById("div").appendChild(enter);
+    if(d>1){
+        alert('U heeft al '+d+' keer op D geklikt')
+    }
+}
+
+console.log(b);
+console.log(a);
+console.log(c);
+console.log(d);
+</script>
+
+<body>
+ <input type="button" value="A" onclick="A()">   
+ <input type="button" value="B" onclick="B()"> 
+ <input type="button" value="C" onclick="C()"> 
+ <input type="button" value="D" onclick="D()"> 
+ <div id=div   >
+</body>
+</html>
