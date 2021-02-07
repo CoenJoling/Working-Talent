@@ -1,0 +1,30 @@
+ <html>
+     <head>
+         <style>
+             .blok{
+                 background-color: lightseagreen;
+                 display: inline-block;
+                 width: 80px;
+                 height: 80px;
+                 text-align: center;
+                }
+         </style>
+
+        <script>
+            function appear(knop){
+        var klik = document.getElementById("History");
+        klik.innerHTML += "Knop " + knop + " is geklikt <br>"
+            }
+        </script>
+
+</head>
+<body>
+<div id=A class=blok onclick="appear(this.id)"> A </div>
+<div id=B class=blok onclick="appear(this.id)"> B </div>
+<div id=C class=blok onclick="appear(this.id)"> C </div>
+<div id=D class=blok onclick="appear(this.id)"> D </div>
+<div id="History">
+
+
+</body>
+ </html>
