@@ -1,0 +1,23 @@
+ <html>
+     <head>
+         <style>
+         </style>
+        <script>
+function clickStarter(){
+    var invoerWaarde=document.getElementById("inputveld").value
+
+    if(invoerWaarde=="Hallo"){
+        alert("Welkom!");
+    }   
+    if (invoerWaarde=="Doei"){
+        alert("Tot de volgende keer");
+    }   //Deze if's zouden ook in een ding kunnen met een else ertussen
+}
+        </script>
+</head>
+<body>
+    <input id=inputveld type="text" placeholder="Typ hier">
+    <input id=button type="button" value="Klik hier" onclick="clickStarter()">
+
+</body>
+ </html>
