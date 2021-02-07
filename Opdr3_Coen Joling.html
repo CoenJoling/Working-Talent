@@ -1,0 +1,39 @@
+ <html>
+     <head>
+         <style>
+         </style>
+        <script>
+function clickStarter(){
+    var invoerWaardeWoord=document.getElementById("inputwoord").value
+    
+
+    var tellen=invoerWaardeWoord.match(/e/g);
+    console.log(tellen)
+
+    alert(tellen.length)
+
+    
+
+
+    //var woordMask = Array(invoerWaardeWoord.length).fill(0)
+
+    //var aantalWaardeWoord=invoerWaardeWoord.match(invoerWaardeLetter)
+
+    //console.log(invoerWaardeLetter)b
+    //console.log(invoerWaardeWoord)
+    //console.log(woordMask)
+
+    //if(invoerWaardeWoord.includes(invoerWaardeLetter)){
+   //     alert("Input bevat letter "+invoerWaardeLetter)
+  //  }
+   
+}
+        </script>
+</head>
+<body>
+    <input id=inputwoord type="text" placeholder="Typ hier het woord">
+   
+    <input id=button type="button" value="Klik hier" onclick="clickStarter()">
+
+</body>
+ </html>
