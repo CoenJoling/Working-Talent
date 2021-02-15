@@ -24,6 +24,7 @@ class Attractie{
 			String attractie [] = {"botsauto","spin","spiegelpaleis","spookhuis","hawaii","ladderklimmen"};
 			System.out.println("Veel plezier in: "+attractie[intkeuze]);
 		if (draaienMaster=false) {
+			System.out.println("De kermis is gestopt");
 			break;
 		}
 		}
